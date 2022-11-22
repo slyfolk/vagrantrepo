@@ -10,8 +10,8 @@
 /* Inclusion of Function Prototypes */
 int _printf(const char *format, ...);
 int _putchar(char c);
-int (*check_specifier(const char *format))(va_list);
-
+int (*check_specifiers(const char *format))(va_list);
+int print_char(va_list);
 typedef struct func
 {
 	char *t;
