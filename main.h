@@ -15,6 +15,8 @@ int _putchar(char c);
 int (*check_specifiers(const char *format))(va_list);
 int print_char(va_list);
 int print_cent(va_list);
+int print_int(va_list);
+
 /**
   * struct func - collection of types for specifiers
   * @t: pointer to character to be compared
