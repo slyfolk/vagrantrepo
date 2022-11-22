@@ -8,10 +8,19 @@
 #include <string.h>
 #include <unistd.h>
 /* Inclusion of Function Prototypes */
+
+int print_str(va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int (*check_specifiers(const char *format))(va_list);
 int print_char(va_list);
+
+/**
+  * struct func - collection of types for specifiers
+  * @t: pointer to character to be compared
+  * @f: function pointer
+  */
+
 typedef struct func
 {
 	char *t;

@@ -5,8 +5,8 @@
 
 void main(void)
 {
-	_printf("Hello, World");
+	_printf("Hello %s", "World");
 	putchar('\n');
-	_printf("%c", 'm');
+	_printf("%s", "m");
 	putchar('\n');
 }

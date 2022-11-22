@@ -3,13 +3,15 @@
 
 int print_str(va_list args)
 {
-	int value, count;
+	int value, i, count;
 
 	count = 0;
-	char *s = va_arg(args, char *);
-	if(s)
+	char *s = va_arg(args, char*);
+	
+	if (s == NULL)
+		return (-1);
+	if(s != NULL)
 	{
-		int i;
 		for (i = 0; s[i] != '\0'; i++)
 		{
 			value = _putchar(s[i]);
@@ -17,5 +19,9 @@ int print_str(va_list args)
 		}
 		
 	}
+
+	if (s[i] == '\0')
+		return (-1);
+
 	return (count);
 }
