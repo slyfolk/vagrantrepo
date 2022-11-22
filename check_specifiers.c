@@ -15,6 +15,8 @@ int (*check_specifiers(const char *format))(va_list)
 	func_t specifiers[ ] =
 	{
 		{"c", print_char},
+		{"s", print_str},
+		{"%", print_cent},
 		{NULL, NULL}
 	};
 
