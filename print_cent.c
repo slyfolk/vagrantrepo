@@ -9,7 +9,7 @@
 
 int print_cent(va_list args)
 {
-	(void) args;
+	void (args);
 	int value, count;
 	
 	value = _putchar('%');
